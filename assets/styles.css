@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+/* 1. VARIABLES DE COLOR */
+:root {
+  --color-azul: #1f374f;
+  --color-dorado: #dfb760;
+  --color-blanco: #ffffff;
+}
+
+/* 2. DEFINICIÓN DE FUENTES (Asegúrate de que los archivos existan en static/fonts/) */
+@font-face {
+  font-family: "Gotham Ultra";
+  src: url("/fonts/Gotham-Ultra.woff2") format("woff2");
+  font-weight: 900; /* Ultra suele ser 900 */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("/fonts/Gotham-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("/fonts/Raleway.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("/fonts/Raleway-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 3. CLASES DE UTILIDAD (Para usar en tu HTML/TSX) */
+.gothamU {
+  font-family: "Gotham Ultra", sans-serif;
+}
+.gotham {
+  font-family: "Gotham", sans-serif;
+}
+.raleway {
+  font-family: "Raleway", sans-serif;
+}
+.ralewayL {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+}
+
+/* 4. RESET Y FONDO GLOBAL */
+html,
+body {
+  background-color: var(--color-azul);
+  color: var(--color-blanco);
+  margin: 0;
+  padding: 0;
+  /* Esto ayuda a que el renderizado de la fuente sea más suave en 2025 */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Gradiente de ejemplo que tenías */
+.fresh-gradient {
+  background-color: rgb(134, 239, 172);
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(219, 234, 254),
+    rgb(187, 247, 208),
+    rgb(254, 249, 195)
+  );
+}
+/*rELOG
+:root{--fcc-flip-duration:0.7s;--fcc-spacing:8px;--fcc-digit-block-width:46px;--fcc-digit-block-height:80px;--fcc-digit-block-radius:4px;--fcc-digit-block-spacing:4px;--fcc-digit-font-size:50px;--fcc-label-font-size:16px;--fcc-label-color:inherit;--fcc-background:#0f181a;--fcc-digit-color:#fff;--fcc-divider-color:hsla(0,0%,100%,0.4);--fcc-divider-height:1px;--fcc-shadow:0 0 2px 1px rgba(0,0,0,0.1);--fcc-separator-size:5px;--fcc-separator-color:currentColor}._qWTcH{font-family:inherit;-webkit-user-select:none;-moz-user-select:none;user-select:none;cursor:default;display:flex;align-items:center;gap:var(--fcc-spacing)}._1tbqx ._3cpN7{margin-bottom:calc(var(--fcc-label-font-size)*2)}._3cpN7 ._2EBbg:not(:last-child){margin-right:var(--fcc-digit-block-spacing)}._3cpN7{position:relative;display:flex;align-items:center}._2aOn7{color:var(--fcc-label-color);line-height:1;font-weight:400;font-size:var(--fcc-label-font-size);position:absolute;bottom:0;left:50%;transform:translate(-50%,150%)}._2EBbg{perspective:200px;position:relative;font-size:var(--fcc-digit-font-size);color:var(--fcc-digit-color);font-weight:500;line-height:0;width:var(--fcc-digit-block-width);height:var(--fcc-digit-block-height);box-shadow:var(--fcc-shadow);border-radius:var(--fcc-digit-block-radius)}._106d2,._SKh-V{position:absolute;width:100%;height:50%;overflow:hidden;display:flex;justify-content:center;background:var(--fcc-background)}._SKh-V{align-items:flex-end;top:0;border-top-left-radius:inherit;border-top-right-radius:inherit;border-bottom:var(--fcc-divider-height) solid var(--fcc-divider-color)}._106d2{align-items:flex-start;bottom:0;border-bottom-left-radius:inherit;border-bottom-right-radius:inherit}._3luxx{position:relative;z-index:2;width:100%;height:50%;transform-style:preserve-3d;transform-origin:bottom;transform:rotateX(0);border-radius:inherit}._3luxx._2kgZC{transition:transform var(--fcc-flip-duration) ease-in-out;transform:rotateX(-180deg)}._2v-d4{position:absolute;width:100%;height:100%;display:flex;justify-content:center;overflow:hidden;backface-visibility:hidden;background:var(--fcc-background)}._1GZQ7{align-items:flex-end;border-top-left-radius:inherit;border-top-right-radius:inherit;border-bottom:var(--fcc-divider-height) solid var(--fcc-divider-color)}._3AVXa{align-items:flex-start;transform:rotateX(-180deg);border-bottom-left-radius:inherit;border-bottom-right-radius:inherit}._2hRXr{height:var(--fcc-digit-block-height);display:flex;flex-direction:column;justify-content:center;align-items:center}._1tbqx ._2hRXr{margin-bottom:calc(var(--fcc-label-font-size)*2)}._2hRXr:after,._2hRXr:before{content:"";width:var(--fcc-separator-size);height:var(--fcc-separator-size);border-radius:50%;background-color:var(--fcc-separator-color)}._2hRXr:before{margin-bottom:var(--fcc-separator-size)}

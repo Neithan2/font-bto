@@ -1,0 +1,39 @@
+{
+  "deno.enable": true,
+  "deno.lint": true,
+  "editor.defaultFormatter": "denoland.vscode-deno",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#2e3353",
+    "activityBar.background": "#2e3353",
+    "activityBar.foreground": "#7fb3d5",
+    "activityBar.inactiveForeground": "#7fb3d599",
+    "activityBarBadge.background": "#905058",
+    "activityBarBadge.foreground": "#7fb3d5",
+    "commandCenter.border": "#7fb3d599",
+    "sash.hoverBorder": "#2e3353",
+    "statusBar.background": "#1c1f32",
+    "statusBar.foreground": "#7fb3d5",
+    "statusBarItem.hoverBackground": "#2e3353",
+    "statusBarItem.remoteBackground": "#1c1f32",
+    "statusBarItem.remoteForeground": "#7fb3d5",
+    "titleBar.activeBackground": "#1c1f32",
+    "titleBar.activeForeground": "#7fb3d5",
+    "titleBar.inactiveBackground": "#1c1f3299",
+    "titleBar.inactiveForeground": "#7fb3d599"
+  }
+}
